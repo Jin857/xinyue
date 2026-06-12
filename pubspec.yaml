@@ -64,6 +64,8 @@ dependencies:
   path_provider: ^2.1.5
   # 提供下拉刷新、上拉加载、上拉加载更多等功能。
   easy_refresh: ^3.5.0
+  # 提供网络请求，用于在应用中发送 HTTP 请求。
+  dio: ^5.4.3
 
 dev_dependencies:
   flutter_test:

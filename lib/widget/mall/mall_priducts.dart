@@ -62,36 +62,14 @@ class MallPriductsState extends ConsumerState<MallPriducts> {
     );
   }
 
-  /// 下拉刷新
+  /// 下拉刷新（从网络重新获取）
   Future<void> _onRefresh() async {
-    await Future.delayed(const Duration(seconds: 1));
-    await ref.read(productsProvider.notifier).loadProducts();
+    await ref.read(productsProvider.notifier).refreshProducts();
   }
 
-  /// 上拉加载更多
+  /// 上拉加载更多（从网络加载下一页）
   Future<void> _onLoad() async {
-    await Future.delayed(const Duration(seconds: 1));
-    // 模拟加载更多数据
-    final notifier = ref.read(productsProvider.notifier);
-    final currentCount = ref.read(productsProvider).length;
-
-    // 生成新的商品数据
-    final newProducts = List.generate(
-      5,
-      (index) => Product(
-        id: '${currentCount + index + 1}',
-        imageUrl:
-            'https://picsum.photos/id/${currentCount + index + 20}/300/300',
-        title: '商品${currentCount + index + 1}',
-        price: 99.90 + index * 10,
-        sales: '月销${(1000 + index * 500)}',
-      ),
-    );
-
-    // 添加到现有列表
-    for (final product in newProducts) {
-      await notifier.addProduct(product);
-    }
+    await ref.read(productsProvider.notifier).loadMoreProducts();
   }
 
   @override
