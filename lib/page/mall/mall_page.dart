@@ -1,28 +1,41 @@
 import 'package:flutter/material.dart';
+import 'mall_priducts.dart';
 
 class MallPage extends StatelessWidget {
   final BuildContext scaffoldContext;
-  const MallPage({super.key, required this.scaffoldContext});
+  final GlobalKey<MallPriductsState> _productsKey = GlobalKey();
+  MallPage({super.key, required this.scaffoldContext});
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverAppBar(
-          pinned: true, // 滑动到顶端时会固定住
-          expandedHeight: 250.0,
-          flexibleSpace: FlexibleSpaceBar(
-            title: const Text("商城"),
-            background: Image.asset("./imgs/sea.png", fit: BoxFit.cover),
-          ),
-          leading: IconButton(
-            icon: Icon(Icons.person_2, color: Colors.black),
-            onPressed: () {
-              Scaffold.of(scaffoldContext).openDrawer();
-            },
-          ),
-        ),
-      ],
+    return Scaffold(
+      body: NestedScrollView(
+        headerSliverBuilder: (context, innerBoxIsScrolled) {
+          return [
+            SliverAppBar(
+              pinned: true,
+              expandedHeight: 250.0,
+              flexibleSpace: FlexibleSpaceBar(
+                background: Image.network(
+                  "https://picsum.photos/id/${30}/${500}/500",
+                  fit: BoxFit.cover,
+                ),
+              ),
+              leading: IconButton(
+                icon: Icon(Icons.person_2, color: Colors.black),
+                onPressed: () {
+                  Scaffold.of(scaffoldContext).openDrawer();
+                },
+              ),
+            ),
+          ];
+        },
+        body: MallPriducts(key: _productsKey),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => _productsKey.pickImage(),
+        child: const Icon(Icons.add_photo_alternate),
+      ),
     );
   }
 }
