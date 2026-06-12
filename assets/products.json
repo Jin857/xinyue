@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "imageUrl": "https://picsum.photos/id/1/300/300",
+    "title": "夏季新款短袖T恤女纯棉宽松韩版学生百搭显瘦上衣打底衫",
+    "price": 59.90,
+    "sales": "月销2.3万"
+  },
+  {
+    "id": "2",
+    "imageUrl": "https://picsum.photos/id/2/300/300",
+    "title": "高腰阔腿牛仔裤女春秋新款显瘦直筒宽松垂感拖地裤",
+    "price": 89.90,
+    "sales": "月销1.8万"
+  },
+  {
+    "id": "3",
+    "imageUrl": "https://picsum.photos/id/3/300/300",
+    "title": "防晒衣女夏季薄款防紫外线透气冰丝长袖防晒服外套",
+    "price": 49.90,
+    "sales": "月销5.6万"
+  },
+  {
+    "id": "4",
+    "imageUrl": "https://picsum.photos/id/4/300/300",
+    "title": "韩版ins学生书包女大容量双肩包百搭简约旅行背包",
+    "price": 79.00,
+    "sales": "月销1.2万"
+  },
+  {
+    "id": "5",
+    "imageUrl": "https://picsum.photos/id/5/300/300",
+    "title": "复古港风chic短袖衬衫女夏季新款设计感小众百搭上衣",
+    "price": 65.90,
+    "sales": "月销8600"
+  },
+  {
+    "id": "6",
+    "imageUrl": "https://picsum.photos/id/6/300/300",
+    "title": "网红ins超火半身裙女夏高腰显瘦A字裙中长款碎花裙",
+    "price": 55.00,
+    "sales": "月销3.1万"
+  },
+  {
+    "id": "7",
+    "imageUrl": "https://picsum.photos/id/7/300/300",
+    "title": "女士凉鞋夏2024新款仙女风百搭网红爆款配裙子平底鞋",
+    "price": 89.90,
+    "sales": "月销4.2万"
+  },
+  {
+    "id": "8",
+    "imageUrl": "https://picsum.photos/id/8/300/300",
+    "title": "简约帆布包女单肩ins日系大学生上课大容量托特包",
+    "price": 39.90,
+    "sales": "月销6.8万"
+  },
+  {
+    "id": "9",
+    "imageUrl": "https://picsum.photos/id/9/300/300",
+    "title": "运动休闲套装女夏时尚洋气减龄短袖短裤两件套",
+    "price": 99.00,
+    "sales": "月销2.5万"
+  },
+  {
+    "id": "10",
+    "imageUrl": "https://picsum.photos/id/10/300/300",
+    "title": "法式复古方领泡泡袖连衣裙女夏收腰显瘦气质碎花裙",
+    "price": 129.00,
+    "sales": "月销1.6万"
+  }
+]

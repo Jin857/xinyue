@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'mall_priducts.dart';
+import '../../widget/mall/mall_priducts.dart';
 
 class MallPage extends StatelessWidget {
   final BuildContext scaffoldContext;
