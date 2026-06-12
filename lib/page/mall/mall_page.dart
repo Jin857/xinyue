@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:xinyue/page/mall/mall_priducts.dart';
 
 class MallPage extends StatelessWidget {
   final BuildContext scaffoldContext;
@@ -7,7 +6,6 @@ class MallPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MallPriducts();
     return CustomScrollView(
       slivers: [
         SliverAppBar(
@@ -20,7 +18,6 @@ class MallPage extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.person_2, color: Colors.black),
             onPressed: () {
-              print("------>$scaffoldContext");
               Scaffold.of(scaffoldContext).openDrawer();
             },
           ),
