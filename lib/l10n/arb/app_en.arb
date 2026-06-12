@@ -1,0 +1,16 @@
+{
+  "title": "My Flutter App",
+  "hello": "Hello, {userName}!",
+  "@hello": {
+    "description": "A welcome message for the user",
+    "placeholders": {
+      "userName": {
+        "type": "String",
+        "example": "Alex"
+      }
+    }
+  },
+  "home": "Home",
+  "messages": "Messages",
+  "profile": "My"
+}

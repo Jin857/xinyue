@@ -1,0 +1,16 @@
+{
+  "title": "我的Flutter应用",
+  "hello": "你好, {userName}!",
+  "@hello": {
+    "description": "给用户的欢迎信息",
+    "placeholders": {
+      "userName": {
+        "type": "String",
+        "example": "亚历克斯"
+      }
+    }
+  },
+  "home": "首页",
+  "messages": "消息",
+  "profile": "我的"
+}
